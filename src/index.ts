@@ -11,7 +11,7 @@ connectDB();
 
 app.use(logger);
 app.use(express.json());
-app.use('/api/v1/',globalRouter);
+app.use('/api/',globalRouter);
 
 
 app.get('/helloworld',(request,response) =>{
